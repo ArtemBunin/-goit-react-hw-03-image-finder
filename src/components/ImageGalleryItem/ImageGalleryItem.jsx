@@ -15,7 +15,7 @@ export class ImageGalleryItem extends Component {
   };
 
   toogleModal = () => {
-    this.setState(pevState => ({ showModal: !pevState.showModal }));
+    this.setState(state => ({ showModal: !state.showModal }));
   };
   render() {
     const {tags,webformatURL,largeImageURL } = this.props;

@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import {
@@ -50,6 +50,6 @@ export class SearchBar extends Component {
   }
 }
 
-// SearchBar.prototype = {
-//   onSubmit: PropTypes.func.isRequired,
-// };
+SearchBar.prototype = {
+  onSubmit: PropTypes.func.isRequired,
+};
