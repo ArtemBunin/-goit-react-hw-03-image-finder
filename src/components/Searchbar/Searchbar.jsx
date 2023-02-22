@@ -36,7 +36,7 @@ export class SearchBar extends Component {
           </FormButton>
 
           <FormInput
-            className="input"
+          
             type="text"
             autoComplete="off"
             autoFocus
@@ -50,6 +50,7 @@ export class SearchBar extends Component {
   }
 }
 
-SearchBar.prototype = {
-  onSubmit: PropTypes.func.isRequired,
+SearchBar.propTypes = {
+  isSubmiting: PropTypes.bool.isRequired,
+  onSubmit : PropTypes.func.isRequired,
 };
