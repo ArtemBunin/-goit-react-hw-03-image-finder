@@ -13,6 +13,8 @@ export class Modal extends Component {
   }
 
   closeModal = element => {
+    console.log(element.code);
+
     if (element.code === 'Escape' || element.currentTarget === element.target) {
       this.props.closeModal();
       return;
